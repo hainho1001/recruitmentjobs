@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Trang Chu</title>
+    <link href="css/vendor.min.css" rel="stylesheet">
+    <link href="css/main.min.css" rel="stylesheet">
+</head>
+
+<body>
+<div class="wrapper">
+    <!-- HEADER -->
+<header class="header">
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand header__logo" href="#">HongNhung</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+        <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+            <ul class="navbar-nav align-items-center">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Trang chủ <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Tất cả việc làm</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Công Ty</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Blog</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav align-items-center">
+                <li class="nav-item">
+                <!-- Button trigger modal -->
+                    <button type="button" class="nav-link nav-button" data-toggle="modal" data-target="#exampleModal">
+                        <i class="fa fa-fw fa-lg fa-sign-in"></i>
+                        Đăng Nhập
+                    </button>
+                    <!-- Modal -->
+                    <div class="modal login-modal fade" id="exampleModal" tabindex="-1" role="dialog"  aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content login-modal__content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title login-modal__title" id="exampleModalLabel">Đăng Nhập</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="login-modal__row row">
+                                        <div class="col-6">
+                                            <a class="login-modal__btn d-flex align-items-center justify-content-center" href="">
+                                                <span class="login-modal__icon">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" version="1.1">
+                                                        <path style=" fill:#FFC107;" d="M 43.609375 20.082031 L 42 20.082031 L 42 20 L 24 20 L 24 28 L 35.304688 28 C 33.652344 32.65625 29.222656 36 24 36 C 17.371094 36 12 30.628906 12 24 C 12 17.371094 17.371094 12 24 12 C 27.058594 12 29.84375 13.152344 31.960938 15.039063 L 37.617188 9.382813 C 34.046875 6.054688 29.269531 4 24 4 C 12.953125 4 4 12.953125 4 24 C 4 35.046875 12.953125 44 24 44 C 35.046875 44 44 35.046875 44 24 C 44 22.660156 43.863281 21.351563 43.609375 20.082031 Z "></path>
+                                                        <path style=" fill:#FF3D00;" d="M 6.304688 14.691406 L 12.878906 19.511719 C 14.65625 15.109375 18.960938 12 24 12 C 27.058594 12 29.84375 13.152344 31.960938 15.039063 L 37.617188 9.382813 C 34.046875 6.054688 29.269531 4 24 4 C 16.316406 4 9.65625 8.335938 6.304688 14.691406 Z "></path>
+                                                        <path style=" fill:#4CAF50;" d="M 24 44 C 29.164063 44 33.859375 42.023438 37.410156 38.808594 L 31.21875 33.570313 C 29.210938 35.089844 26.714844 36 24 36 C 18.796875 36 14.382813 32.683594 12.71875 28.054688 L 6.195313 33.078125 C 9.503906 39.554688 16.226563 44 24 44 Z "></path>
+                                                        <path style=" fill:#1976D2;" d="M 43.609375 20.082031 L 42 20.082031 L 42 20 L 24 20 L 24 28 L 35.304688 28 C 34.511719 30.238281 33.070313 32.164063 31.214844 33.570313 C 31.21875 33.570313 31.21875 33.570313 31.21875 33.570313 L 37.410156 38.808594 C 36.972656 39.203125 44 34 44 24 C 44 22.660156 43.863281 21.351563 43.609375 20.082031 Z "></path>
+                                                    </svg>
+                                                </span>
+                                                <span class="login-modal__btn__span d-none d-lg-block">Dùng bằng tài khoản</span>
+                                                <span class="login-modal__btn__span">Google</span>
+                                            </a>
+                                        </div>
+                                        <div class="col-6">
+                                            <a class="login-modal__btn d-flex align-items-center justify-content-center" href="">
+                                                <span class="login-modal__icon">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+                                                        <path d="M44,38.44A5.56,5.56,0,0,1,38.44,44H9.56A5.56,5.56,0,0,1,4,38.44V9.56A5.56,5.56,0,0,1,9.56,4H38.44A5.56,5.56,0,0,1,44,9.56Z" style="fill:#3f51b5"></path>
+                                                        <path d="M35.52,25.11H31.78V39.56H26.22V25.11H22.89V20.67h3.33V18c0-3.9,1.62-6.21,6.22-6.21h3.78v4.44H33.68c-1.79,0-1.91.67-1.91,1.91v2.53h4.44Z" style="fill:#fff"></path>
+                                                    </svg>
+                                                </span>
+                                                <span class="login-modal__btn__span d-none d-lg-block">Dùng bằng tài khoản</span>
+                                                <span class="login-modal__btn__span">Google</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="login-modal__user-email">Sử dụng tài khoản VietnamWorks</div>
+                                    <!-- Sign In Form -->
+                                    <form action="">
+                                        <div class="">
+                                            <label>Email</label>
+                                            <input class="input-control" type="text">
+                                        </div>
+                                        <div>
+                                            <label>Mật khẩu</label>
+                                            <input class="input-control" type="text">
+                                        </div>
+                                        <div class="login-modal__forgot-password d-flex justify-content-end">
+                                            <a href="">Quên mật khẩu?</a>
+                                        </div>
+                                        <button class="btn-red">Đăng nhập</button>
+                                    </form>
+                                    <hr class="login-modal__light">
+                                    <div class="text-center login-modal__register">Chưa có tài khoản? <a href="">Đăng ký!</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Modal -->
+                </li>
+                <li class="nav-item">
+                    <button type="button" class="nav-link nav-button" data-toggle="modal" data-target="#registerModal">
+                        Đăng ký
+                    </button>
+                    <!-- Modal -->
+                    <div class="modal login-modal fade" id="registerModal" tabindex="-1" role="dialog"  aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content login-modal__content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title login-modal__title" id="exampleModalLabel">Đăng Ký Thành Viên</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="login-modal__row row">
+                                        <div class="col-6">
+                                            <a class="login-modal__btn d-flex align-items-center justify-content-center" href="">
+                                                <span class="login-modal__icon">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" version="1.1">
+                                                        <path style=" fill:#FFC107;" d="M 43.609375 20.082031 L 42 20.082031 L 42 20 L 24 20 L 24 28 L 35.304688 28 C 33.652344 32.65625 29.222656 36 24 36 C 17.371094 36 12 30.628906 12 24 C 12 17.371094 17.371094 12 24 12 C 27.058594 12 29.84375 13.152344 31.960938 15.039063 L 37.617188 9.382813 C 34.046875 6.054688 29.269531 4 24 4 C 12.953125 4 4 12.953125 4 24 C 4 35.046875 12.953125 44 24 44 C 35.046875 44 44 35.046875 44 24 C 44 22.660156 43.863281 21.351563 43.609375 20.082031 Z "></path>
+                                                        <path style=" fill:#FF3D00;" d="M 6.304688 14.691406 L 12.878906 19.511719 C 14.65625 15.109375 18.960938 12 24 12 C 27.058594 12 29.84375 13.152344 31.960938 15.039063 L 37.617188 9.382813 C 34.046875 6.054688 29.269531 4 24 4 C 16.316406 4 9.65625 8.335938 6.304688 14.691406 Z "></path>
+                                                        <path style=" fill:#4CAF50;" d="M 24 44 C 29.164063 44 33.859375 42.023438 37.410156 38.808594 L 31.21875 33.570313 C 29.210938 35.089844 26.714844 36 24 36 C 18.796875 36 14.382813 32.683594 12.71875 28.054688 L 6.195313 33.078125 C 9.503906 39.554688 16.226563 44 24 44 Z "></path>
+                                                        <path style=" fill:#1976D2;" d="M 43.609375 20.082031 L 42 20.082031 L 42 20 L 24 20 L 24 28 L 35.304688 28 C 34.511719 30.238281 33.070313 32.164063 31.214844 33.570313 C 31.21875 33.570313 31.21875 33.570313 31.21875 33.570313 L 37.410156 38.808594 C 36.972656 39.203125 44 34 44 24 C 44 22.660156 43.863281 21.351563 43.609375 20.082031 Z "></path>
+                                                    </svg>
+                                                </span>
+                                                <span class="login-modal__btn__span d-none d-lg-block">Dùng bằng tài khoản</span>
+                                                <span class="login-modal__btn__span">Google</span>
+                                            </a>
+                                        </div>
+                                        <div class="col-6">
+                                            <a class="login-modal__btn d-flex align-items-center justify-content-center" href="">
+                                                <span class="login-modal__icon">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+                                                        <path d="M44,38.44A5.56,5.56,0,0,1,38.44,44H9.56A5.56,5.56,0,0,1,4,38.44V9.56A5.56,5.56,0,0,1,9.56,4H38.44A5.56,5.56,0,0,1,44,9.56Z" style="fill:#3f51b5"></path>
+                                                        <path d="M35.52,25.11H31.78V39.56H26.22V25.11H22.89V20.67h3.33V18c0-3.9,1.62-6.21,6.22-6.21h3.78v4.44H33.68c-1.79,0-1.91.67-1.91,1.91v2.53h4.44Z" style="fill:#fff"></path>
+                                                    </svg>
+                                                </span>
+                                                <span class="login-modal__btn__span d-none d-lg-block">Dùng bằng tài khoản</span>
+                                                <span class="login-modal__btn__span">Google</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="login-modal__user-email">ĐĂNG KÝ BẰNG EMAIL</div>
+                                    <!-- Sign In Form -->
+                                    <form action="">
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <label>Họ</label>
+                                                <input class="input-control" type="text">
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <label>Tên</label>
+                                                <input class="input-control" type="text">
+                                            </div>
+                                        </div>
+                                        <div class="">
+                                            <label>Email</label>
+                                            <input class="input-control" type="text">
+                                        </div>
+                                        <div>
+                                            <label>Mật khẩu</label>
+                                            <input class="input-control input-register" type="text">
+                                            <small class="help-text text-gray password-hint">Mật khẩu từ 6 đến 50 ký tự, ít nhất 1 ký tự viết hoa và 1 chữ số.</small>
+                                        </div>
+                                        <div class="checkbox-rigister d-flex align-items-center">
+                                            <input type="checkbox">
+                                            <div>Tôi muốn nhận Bản tin VietnamWorks hàng tuần và hàng tháng</div>
+                                        </div>
+                                        <button class="btn-red">Đăng ký</button>
+                                    </form>
+                                    <div class="text-center disclaimer-register">Nhấp chọn "Đăng ký", tôi đã đọc và đồng ý với các
+                                        <br>
+                                        <a href="">Quy định bảo mật</a> và <a href="">Thỏa thuận sử dụng</a>
+                                    </div>
+                                    <hr class="login-modal__light">
+                                    <div class="text-center login-modal__register">Bạn là thành viên VietnamWorks? <a href="">Đăng nhập</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Modal -->
+                </li>
+                <li class="nav-item header-employer__w100">
+                    <a class="nav-link header-employer" href="#">
+                        <div class="header-employer__title">Nhà tuyển dụng</div>
+                        <div class="header-employer__desc">Đăng Tuyển & Kiếm Nhân Tài</div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="nav-item dropdown header__nagination">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fa fa-bell header__bell"></i>
+            </a>
+            <div class="dropdown-menu notification" aria-labelledby="navbarDropdown">
+                <div class="notification__title">Thông báo</div>
+                <div class="notification__list">
+                    <a class="notification__content d-flex align-items-center" href="">
+                        <div class="notification__img"><img src="images/tln.png" alt="a"></div>
+                        <div class="notification__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, labore?</div>
+                    </a>
+                    <a class="notification__content d-flex align-items-center" href="">
+                        <div class="notification__img"><img src="images/tln.png" alt="a"></div>
+                        <div class="notification__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, labore?</div>
+                    </a>
+                    <a class="notification__content d-flex align-items-center" href="">
+                        <div class="notification__img"><img src="images/tln.png" alt="a"></div>
+                        <div class="notification__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, labore?</div>
+                    </a>
+                    <a class="notification__content d-flex align-items-center" href="">
+                        <div class="notification__img"><img src="images/tln.png" alt="a"></div>
+                        <div class="notification__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, labore?</div>
+                    </a>
+                </div>
+                <div class="notification__btn text-center"><a href="">Xem thêm</a></div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<!-- END HEADER -->
+
+        <main>
+            <section class="company-search">
+                <div class="container">
+                    <h2 class="company-search__head">Khám phá văn hoá công ty</h2>
+                    <p class="text-lg-left text-center">Tìm hiểu văn hoá công ty và chọn cho bạn nơi làm việc phù hợp nhất.</p>
+                    <form class="search-widget__form" action="">
+                        <div class="row">
+                            <div class="col-lg-10 search-col">
+                                <div class="row">
+                                    <div class="col-lg-4 search-col d-flex">
+                                        <div class="ui floating dropdown labeled icon button search-widget__dropdown">
+                                                <span class="text">Tất cả các ngành nghề</span>
+                                                <i class="fa fa-angle-down search-widget__right" aria-hidden="true"></i>
+                                            <div class="menu">
+                                                <div class="ui icon search input">
+                                                    <i class="fa fa-search" aria-hidden="true"></i>
+                                                    <input type="text" placeholder="Search tags...">
+                                                </div>
+                                                <div class="menu-scroll">
+                                                    <div class="scrolling menu">
+                                                        <div class="item active">
+                                                            Tất cả các ngành nghề
+                                                        </div>
+                                                    </div>
+                                                    <div class="scrolling menu">
+                                                        <div class="item">
+                                                            Important 2
+                                                        </div>
+                                                    </div>
+                                                    <div class="scrolling menu">
+                                                        <div class="item">
+                                                            Important 3
+                                                        </div>
+                                                    </div>
+                                                    <div class="scrolling menu">
+                                                        <div class="item">
+                                                            Important
+                                                        </div>
+                                                    </div>
+                                                    <div class="scrolling menu">
+                                                        <div class="item">
+                                                            Important 2
+                                                        </div>
+                                                    </div>
+                                                    <div class="scrolling menu">
+                                                        <div class="item">
+                                                            Important 3
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 search-col d-flex">
+                                        <div class="ui floating dropdown labeled icon button search-widget__dropdown">
+                                                <span class="text">Tất cả các địa điểm</span>
+                                                <i class="fa fa-angle-down search-widget__right" aria-hidden="true"></i>
+                                            <div class="menu">
+                                                <div class="ui icon search input">
+                                                    <i class="fa fa-search" aria-hidden="true"></i>
+                                                    <input type="text" placeholder="Search tags...">
+                                                </div>
+                                                <div class="menu-scroll">
+                                                    <div class="scrolling menu">
+                                                        <div class="item active">
+                                                            Tất cả các địa điểm
+                                                        </div>
+                                                    </div>
+                                                    <div class="scrolling menu">
+                                                        <div class="item">
+                                                            Important 2
+                                                        </div>
+                                                    </div>
+                                                    <div class="scrolling menu">
+                                                        <div class="item">
+                                                            Important 3
+                                                        </div>
+                                                    </div>
+                                                    <div class="scrolling menu">
+                                                        <div class="item">
+                                                            Important
+                                                        </div>
+                                                    </div>
+                                                    <div class="scrolling menu">
+                                                        <div class="item">
+                                                            Important 2
+                                                        </div>
+                                                    </div>
+                                                    <div class="scrolling menu">
+                                                        <div class="item">
+                                                            Important 3
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 search-col d-flex">
+                                        <div class="search-widget__input">
+                                            <input type="text" placeholder="Nhập tên công ty">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 search-col d-flex">
+                                <button class="btn-red search-widget__btn">Áp dụng bộ lọc</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </section>
+            <!-- end search -->
+            <section class="company-result">
+                <div class="container">
+                    <div class="company-result__headding d-lg-flex justify-content-lg-between">
+                        <div class="d-flex company-result__mb">
+                            <div class="company-result__text">195</div>
+                            CÔNG TY ĐƯỢC TÌM THẤY
+                        </div>
+                        <div class="company-result__checkbox company-result__mb d-flex align-items-center">
+                            <input type="checkbox">
+                            <a class="company-result__link" href="">CHỈ XEM NHỮNG CÔNG TY ĐANG TUYỂN DỤNG</a>
+                        </div>
+                        <div class="company-result__mb d-flex align-items-center">
+                            <div>SẮP XẾP THEO:</div>
+                            <div class="ui floating dropdown labeled icon button">
+                                <span class="text company-result__link">Lượt xem</span>
+                                <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                <div class="menu">
+                                    <div class="item active">Lượt xem</div>
+                                    <div class="item">Số người theo dõi</div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6">
+                            <div class="company-list__item">
+                                <a href="">
+                                    <div class="company-list__img" style="background: url(images/banner.png) center center / cover; height: 270px;">
+                                </a>
+                                    <span class="company-list__opening">Đang tuyển</span>
+                                </div>
+                                <div class="company-list__info d-flex justify-content-between">
+                                    <div class="company-list__content">
+                                        <a class="company-list__title" href="">VietnamWorks VietnamWorks VietnamWorks</a>
+                                        <div class="company-list__text">Nhân sự</div>
+                                        <div class="company-list__text">Hà Nội, Hồ Chí Minh</div>
+                                    </div>
+                                    <div class="company-list__heart d-flex flex-column align-items-center">
+                                        <i class="fa fa fa-heart-o"> </i>
+                                        <div>334</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--end item -->
+                        <div class="col-lg-4 col-md-6">
+                            <div class="company-list__item">
+                                <a href="">
+                                    <div class="company-list__img" style="background: url(images/banner.png) center center / cover; height: 270px;">
+                                </a>
+                                    <span class="company-list__opening">Đang tuyển</span>
+                                </div>
+                                <div class="company-list__info d-flex justify-content-between">
+                                    <div class="company-list__content">
+                                        <a class="company-list__title" href="">VietnamWorks VietnamWorks VietnamWorks</a>
+                                        <div class="company-list__text">Nhân sự</div>
+                                        <div class="company-list__text">Hà Nội, Hồ Chí Minh</div>
+                                    </div>
+                                    <div class="company-list__heart d-flex flex-column align-items-center">
+                                        <i class="fa fa fa-heart-o"> </i>
+                                        <div>334</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--end item -->
+                        <div class="col-lg-4 col-md-6">
+                            <div class="company-list__item">
+                                <a href="">
+                                    <div class="company-list__img" style="background: url(images/banner.png) center center / cover; height: 270px;">
+                                </a>
+                                    <span class="company-list__opening">Đang tuyển</span>
+                                </div>
+                                <div class="company-list__info d-flex justify-content-between">
+                                    <div class="company-list__content">
+                                        <a class="company-list__title" href="">VietnamWorks VietnamWorks VietnamWorks</a>
+                                        <div class="company-list__text">Nhân sự</div>
+                                        <div class="company-list__text">Hà Nội, Hồ Chí Minh</div>
+                                    </div>
+                                    <div class="company-list__heart d-flex flex-column align-items-center">
+                                        <i class="fa fa fa-heart-o"> </i>
+                                        <div>334</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--end item -->
+                        <div class="col-lg-4 col-md-6">
+                            <div class="company-list__item">
+                                <a href="">
+                                    <div class="company-list__img" style="background: url(images/banner.png) center center / cover; height: 270px;">
+                                </a>
+                                    <span class="company-list__opening">Đang tuyển</span>
+                                </div>
+                                <div class="company-list__info d-flex justify-content-between">
+                                    <div class="company-list__content">
+                                        <a class="company-list__title" href="">VietnamWorks VietnamWorks VietnamWorks</a>
+                                        <div class="company-list__text">Nhân sự</div>
+                                        <div class="company-list__text">Hà Nội, Hồ Chí Minh</div>
+                                    </div>
+                                    <div class="company-list__heart d-flex flex-column align-items-center">
+                                        <i class="fa fa fa-heart-o"> </i>
+                                        <div>334</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--end item -->
+                        <div class="col-lg-4 col-md-6">
+                            <div class="company-list__item">
+                                <a href="">
+                                    <div class="company-list__img" style="background: url(images/banner.png) center center / cover; height: 270px;">
+                                </a>
+                                    <span class="company-list__opening">Đang tuyển</span>
+                                </div>
+                                <div class="company-list__info d-flex justify-content-between">
+                                    <div class="company-list__content">
+                                        <a class="company-list__title" href="">VietnamWorks VietnamWorks VietnamWorks</a>
+                                        <div class="company-list__text">Nhân sự</div>
+                                        <div class="company-list__text">Hà Nội, Hồ Chí Minh</div>
+                                    </div>
+                                    <div class="company-list__heart d-flex flex-column align-items-center">
+                                        <i class="fa fa fa-heart-o"> </i>
+                                        <div>334</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!--end item -->
+                        <div class="col-lg-4 col-md-6">
+                            <div class="company-list__item">
+                                <a href="">
+                                    <div class="company-list__img" style="background: url(images/banner.png) center center / cover; height: 270px;">
+                                </a>
+                                    <span class="company-list__opening">Đang tuyển</span>
+                                </div>
+                                <div class="company-list__info d-flex justify-content-between">
+                                    <div class="company-list__content">
+                                        <a class="company-list__title" href="">VietnamWorks VietnamWorks VietnamWorks</a>
+                                        <div class="company-list__text">Nhân sự</div>
+                                        <div class="company-list__text">Hà Nội, Hồ Chí Minh</div>
+                                    </div>
+                                    <div class="company-list__heart d-flex flex-column align-items-center">
+                                        <i class="fa fa fa-heart-o"> </i>
+                                        <div>334</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--end item -->
+                    </div>
+
+                    <!-- PAGINATION -->
+                    <div class="paginations">
+                        <nav class="paginations__nav">
+                            <a class="paginations__link" href="#"><i class="fa fa-angle-double-left"></i></a>
+                            <a class="paginations__link" href="#"><i class="fa fa-angle-left"></i></a>
+                            <a class="paginations__link active" href="#">1</a>
+                            <a class="paginations__link" href="#">2</a>
+                            <a class="paginations__link" href="#">3</a>
+                            <a class="paginations__link" href="#"><i class="fa fa-angle-right"></i></a>
+                            <a class="paginations__link" href="#"><i class="fa fa-angle-double-right"></i></a>
+                        </nav>
+                    </div>
+                    <!-- END PAGINATION -->
+                </div>
+            </section>
+        </main>
+    <!-- FOOTER -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-menu">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="footer-menu__blade">
+                        <h3 class="footer-menu__title">Về HaiNho</h3>
+                        <a href="#" class="footer-menu__link">
+                            <span class="footer-menu__dot"><i></i></span>
+                            <span class="footer-menu__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, consectetur.</span>
+                        </a>
+                        <a href="#" class="footer-menu__link">
+                            <span class="footer-menu__dot"><i></i></span>
+                            <span class="footer-menu__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, consectetur.</span>
+                        </a>
+                        <a href="#" class="footer-menu__link">
+                            <span class="footer-menu__dot"><i></i></span>
+                            <span class="footer-menu__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, consectetur.</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="footer-menu__blade">
+                        <h3 class="footer-menu__title">Contact Information</h3>
+                        <a href="#" class="footer-menu__link">
+                            <span class="footer-menu__icon"><i class="fa fa-home"></i></span>
+                            <span class="footer-menu__text footer-menu__text--address">7887 E. Belleview Ave. Suite, 1100 Denver, CO 80111</span>
+                        </a>
+                        <a href="#" class="footer-menu__link">
+                            <span class="footer-menu__icon"><i class="fa fa-phone"></i></i></span>
+                            <span class="footer-menu__text">720 924 6825</span>
+                        </a>
+                        <a href="#" class="footer-menu__link">
+                            <span class="footer-menu__icon"><i class="fa fa-envelope"></i></span>
+                            <span class="footer-menu__text">info@thevngeek.com</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="footer-menu__blade">
+                        <img src="images/lh3.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+    	<div class="container">
+	        <div class="footer__end">
+	            <div class="footer__license d-flex align-items-center">Bản quyền thuộc về HaiNho © 2018. Tất cả các quyền được bảo hộ</div>
+	            <div class="footer__social">
+	                <a class="footer__social-blade" href="#"><i class="fa fa-facebook"></i></a>
+	                <a class="footer__social-blade" href="#"><i class="fa fa-google-plus"></i></a>
+	                <a class="footer__social-blade" href="#"><i class="fa fa-linkedin"></i></a>
+	            </div>
+	        </div>
+	    </div>
+    </div>
+</footer>
+<!-- END FOOTER -->
+
+</div>
+<script src="js/vendor.min.js"></script>
+<script src="js/main.min.js"></script>
+</body>
+
+</html>
