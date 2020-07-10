@@ -42,9 +42,9 @@
                             </button>
                             <div class="header-logged__menu dropdown-menu" aria-labelledby="dropdownMenuButton">
                                 <div class="header-logged__head">Quản lý nghề nghiệp</div>
-                                <a class="dropdown-item" href="#"><i class="fa fa-fw fa-lg fa-heart"></i> Việc làm của tôi</a>
-                                <a class="dropdown-item" href="#"><i class="fa fa-fw fa-lg fa-tachometer"></i>Quản lý việc làm</a>
-                                <a class="dropdown-item" href="#">Tài khoản</a>
+                                <!-- <a class="dropdown-item" href="#"><i class="fa fa-fw fa-lg fa-heart"></i> Việc làm của tôi</a>
+                                <a class="dropdown-item" href="#"><i class="fa fa-fw fa-lg fa-tachometer"></i>Quản lý việc làm</a> -->
+                                <!-- <a class="dropdown-item" href="#">Tài khoản</a> -->
                                 <a class="dropdown-item" href="{{ route('logout') }}">Thoát</a>
                                 
                             </div>
