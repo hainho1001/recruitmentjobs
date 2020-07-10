@@ -61,7 +61,7 @@ class JobController extends Controller
         );
 
         Job::create($form_data);
-        return redirect()->route('jobs.index')->with('success', 'Create Company Success');
+        return redirect()->route('jobs.index')->with('success', 'Create Job Success');
     }
     /**
      * Display the specified resource.
@@ -105,7 +105,7 @@ class JobController extends Controller
             'employment'            =>   $request->employment
         );
         Job::find($id)->update($form_data);
-        return redirect()->route('jobs.index')->with('success', 'Edit Company Success');
+        return redirect()->route('jobs.index')->with('success', 'Edit Job Success');
     }
     /**
      * Remove the specified resource from storage.
@@ -116,6 +116,6 @@ class JobController extends Controller
     public function destroy($id)
     {
         Job::find($id)->delete();
-        return redirect()->route('jobs.index')->with('success', 'Delete Company Success');
+        return redirect()->route('jobs.index')->with('success', 'Delete Job Success');
     }
 }

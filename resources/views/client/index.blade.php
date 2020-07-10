@@ -264,7 +264,7 @@
                                         <div class="company-home__content">
                                             <h2 class="company-home__title"><a href="{{ route('client.company.show', $company->id)}}">{{$company->name}}</a></h2>
                                             <p class="company-home__meta">
-                                                <em>A Big Game Company In Japan</em>
+                                                <em>{{$company->address}}</em>
                                             </p>
                                             <p class="company-home__desc profile__text">{{$company->profile}}</p>
                                             <div class="d-flex justify-content-lg-end justify-content-center">
