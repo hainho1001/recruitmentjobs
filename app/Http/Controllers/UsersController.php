@@ -3,11 +3,12 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\User;
+use App\Company;
 
 class UsersController extends Controller
 {
     function list(){
-    	return User::all();
+    	$user = Company::all();
+        return response()->json(['success' => $user], 200); 
     }
 }
