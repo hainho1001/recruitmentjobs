@@ -19,8 +19,14 @@ use Illuminate\Support\Facades\Route;
 // });
 Route::get('list', 'UsersController@list');
 
-Route::post('login', 'API\Auth\RegisterController@login');
-Route::post('register', 'API\Auth\RegisterController@register');
+Route::post('login', 'API\Auth\AuthController@login');
+Route::post('register', 'API\Auth\AuthController@register');
+
 Route::group(['middleware' => 'auth:api'], function(){
-Route::post('details', 'API\Auth\RegisterController@details');
+	Route::post('saveuserinfo', 'API\Auth\AuthController@saveuserinfo');
+	Route::get('logout', 'API\Auth\AuthController@logout');
 });
+Route::get('company', 'API\Auth\CompanyController@index');
+Route::get('slider', 'API\Auth\CompanyController@slider');
+
+Route::get('job', 'API\Auth\CompanyController@indexx');

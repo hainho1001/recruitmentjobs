@@ -188,7 +188,7 @@
                         <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Việc Làm Tốt Nhất</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Việc Làm Gợi Ý</a>
+                        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Việc Làm Mới Nhất</a>
                     </li>
                 </ul>
                 <div class="tab-content" id="myTabContent">
@@ -216,7 +216,7 @@
                     <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
                         <div class="row justify-content-center">
                             <div class="col-md-8">
-                                @foreach($jobs as $job)
+                                @foreach($sugjobs as $job)
                                 <div class="jobs-home__content">
                                     <div class="jobs-home__img">
                                         <a href="{{ route ('client.job.show', $job->id)}}"><img src="{{ URL::to('/') }}/images/{{ $job->company['logo'] }}" alt=""></a>

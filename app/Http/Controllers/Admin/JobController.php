@@ -10,7 +10,7 @@ use App\Job;
 class JobController extends Controller
 {
     public function index() {
-    	$jobs = Job::latest()->paginate(20);
+    	$jobs = Job::latest()->paginate(10);
     	return view('admin.job.index', compact('jobs'));
     }
     /**

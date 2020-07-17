@@ -15,7 +15,8 @@ class HomeController extends Controller
     	$companieso = Company::inRandomOrder()->limit(2)->get();
     	$companiest = Company::inRandomOrder()->limit(12)->get();
     	$jobs = Job::inRandomOrder()->limit(10)->get();
+    	$sugjobs= Job::orderBy('id', 'desc')->get();
     	$slide = Company::take(3)->get();
-    	return view('client.index', compact('companiess', 'companieso', 'companiest', 'jobs', 'slide'));
+    	return view('client.index', compact('companiess', 'companieso', 'companiest', 'jobs', 'sugjobs', 'slide'));
     }
 }

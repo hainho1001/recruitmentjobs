@@ -53,15 +53,15 @@
                         <input type="hidden" name="backUrl" value="{{ url()->previous() }}">
                         <div class="mb-4">
                             {!!Form::label('Email')!!}
-                            {!!Form::email('txtEmail',null, ['class'=>'input-control' ])!!}
-                                @error('txtEmail')
+                            {!!Form::email('email',null, ['class'=>'input-control' ])!!}
+                                @error('email')
                                     <div class="error__login">{{ $message }}</div>
                                 @enderror
                         </div>
                         <div class="mb-4">
                             {!!Form::label('Mật Khẩu')!!}
-                            {!!Form::password('txtPassword', ['class'=>'input-control' ])!!}
-                                @error('txtPassword')
+                            {!!Form::password('password', ['class'=>'input-control' ])!!}
+                                @error('password')
                                     <div class="error__login">{{ $message }}</div>
                                 @enderror
                         </div>

@@ -24,15 +24,15 @@ class LoginRequest extends FormRequest
     public function rules()
     {
         return [
-            'txtEmail' => 'required',
-            'txtPassword' => 'required'
+            'email' => 'required',
+            'password' => 'required'
         ];
        
     }
      public function messages() {
         return [
-            'txtEmail.required' => 'Vui lòng nhập Email',
-            'txtPassword.required' => 'Vui lòng nhập Password'
+            'email.required' => 'Vui lòng nhập Email',
+            'password.required' => 'Vui lòng nhập Password'
         ];
     }
 }

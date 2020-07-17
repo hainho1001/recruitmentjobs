@@ -9,6 +9,6 @@ class UsersController extends Controller
 {
     function list(){
     	$user = Company::all();
-        return response()->json(['success' => $user], 200); 
+        return response()->json([$user], 200); 
     }
 }

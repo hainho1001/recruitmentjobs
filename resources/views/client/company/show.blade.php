@@ -92,9 +92,9 @@
                             </div>
                             @endforeach
                         <!-- end item -->
-                        <div class="company-jobs__btn-bt">
+                        <!-- <div class="company-jobs__btn-bt">
                             <button class="company-jobs__btn">Thêm...</button>
-                        </div>
+                        </div> -->
                         @else
                         <p>No data</p>
                         @endif

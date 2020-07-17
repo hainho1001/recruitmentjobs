@@ -2,7 +2,7 @@
 
 @section('content')
 
-	<div class="row">
+	<div class="row pt-4 pb-4">
 		<div class="col-12">
 			<div class="text-center">
 				<h3>Company</h3>
@@ -29,8 +29,8 @@
 			<td>{{$company->name}}</td>
 			<td>{{$company->career}}</td>
 			<td>{{$company->address}}</td>
-			<td><img width="100px" src="{{ URL::to('/') }}/images/{{ $company->logo }}"></td>
-			<td><img width="100px" src="{{ URL::to('/') }}/images/{{ $company->image }}"></td>
+			<td><img style="width: 100px" src="{{ URL::to('/') }}/images/{{ $company->logo }}"></td>
+			<td><img style="width: 100px" src="{{ URL::to('/') }}/images/{{ $company->image }}"></td>
 			<td>
 				<a class="btn btn-xs btn-info" href="{{ route('dashboard.companies.show', $company->id) }}">Show</a>
 				{!! Form::open(['method' => 'DELETE', 'route' => ['dashboard.companies.delete', $company->id], 'style' =>'display:inline'])!!}

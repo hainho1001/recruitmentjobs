@@ -25,6 +25,12 @@
 	</div>
 	<div class="col-12">
 		<div class="form-group">
+			<strong>Mức Lương : </strong>
+			{!! Form::text('salary',null, ['placeholder'=>'Salary', 'class'=>'form-control' ]) !!}
+		</div>
+	</div>
+	<div class="col-12">
+		<div class="form-group">
 			<strong>Mô Tả : </strong>
 			{!! Form::textarea('description',null, ['placeholder'=>'Description', 'class'=>'form-control', 'style' => 'height:200px' ]) !!}
 		</div>
@@ -33,12 +39,6 @@
 		<div class="form-group">
 			<strong>Yêu Cầu Công Việc : </strong>
 			{!! Form::textarea('requirements',null, ['placeholder'=>'Requirements', 'class'=>'form-control', 'style' => 'height:200px' ]) !!}
-		</div>
-	</div>
-	<div class="col-12">
-		<div class="form-group">
-			<strong>Mức Lương : </strong>
-			{!! Form::text('salary',null, ['placeholder'=>'Salary', 'class'=>'form-control' ]) !!}
 		</div>
 	</div>
 	<div class="col-12 text-center">

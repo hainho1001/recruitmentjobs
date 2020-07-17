@@ -102,7 +102,7 @@ class JobController extends Controller
             'address'        =>   $request->address,
             'description'       =>   $request->description,
             'requirements'        =>   $request->requirements,
-            'employment'            =>   $request->employment
+            'salary'            =>   $request->salary
         );
         Job::find($id)->update($form_data);
         return redirect()->route('jobs.index')->with('success', 'Edit Job Success');

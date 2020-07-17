@@ -36,8 +36,8 @@ class LoginController extends Controller
 	{
 		$backUrl = $request->backUrl;
 		$login = [
-			'email' => $request->txtEmail,
-			'password' => $request->txtPassword
+			'email' => $request->email,
+			'password' => $request->password
 		];
 		if(Auth::attempt($login)){
 			if(Auth::user()->roles == 1){
